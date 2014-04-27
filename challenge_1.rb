@@ -14,9 +14,9 @@
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
 def pmt(rate, nper, pv)
-  # ============================================
-  # Your code to implement the method goes here.
-  # ============================================
+  num = pv * rate * (1 + rate) ** nper
+  dec = (1 + rate) ** nper - 1
+  payment = num/dec
 end
 
 # Example usage of the method:

@@ -27,3 +27,9 @@ principal_amount = 100000.0
 # ====================
 # Your code goes here.
 # ====================
+
+# puts pmt(0.013, number_of_payments, principal_amount)
+
+loan_quotes.each do |bank|
+  puts "Your monthly payment at #{bank["bank"]} will be #{pmt(bank["rate"], number_of_payments, principal_amount)}."
+end
